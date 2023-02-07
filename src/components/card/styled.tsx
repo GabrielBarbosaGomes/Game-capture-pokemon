@@ -65,9 +65,14 @@ export const ComponentWraperItens = styled.div`
     padding-top: 170px;
     padding: 170px 24px 0;
     box-sizing: border-box;
+    padding-bottom: 140px;
 
     .wraper {
         padding: 0 24px;
+    }
+
+    @media (min-width: 768px){
+        padding-bottom: 0px;
     }
 `
 

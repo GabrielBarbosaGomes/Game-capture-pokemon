@@ -19,11 +19,9 @@ const Home = () => {
     useEffect(() => {
         getApi()
             .then(response => {
-                console.log('response', response)
                 setData(response.data);
             })
             .catch(error => {
-                console.log(error)
                 setError(error);
             });
     }, []);

@@ -38,7 +38,6 @@ const Personagem = ({onclick}:Props) => {
                     })
                 })
                 .catch(error => {
-                    console.log(error)
                 });
                 setBallonAtencao(ballon)
         } else {

@@ -193,7 +193,6 @@ const CreatPokemonNow = () => {
     };
     await verifyLocalStorage(constructPokemon, false, false);
     const team = getLocalStorage();
-    console.log("team", team);
     dispatch({
       type: "SET_POKEMON_EDIT",
       payload: {
@@ -232,7 +231,6 @@ const CreatPokemonNow = () => {
     const validation = setBtnDisable(
       inuputsValidators.some((inputs: any) => !inputs)
     );
-    console.log("vaFlidation", btndisable, inuputsValidators);
   }, [
     hp,
     weight,

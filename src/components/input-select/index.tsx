@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { typeColorMap } from "../../ultils/typesPokemon";
 import { Options, Selected, Wrapper, Option } from "./styled";
+import arrowDown from "../../assets/images/chevronDownBlack.png";
 
 type Props = {
   setSelected: any;
@@ -38,7 +39,12 @@ const InputSelect = ({ selected, setSelected }: Props) => {
       <Selected>
         {selected.length
           ? selected.map((selectedType: any) => selectedType).join(", ")
-          : "Selecione o(s) tipo(s)"}
+          : (
+          <div className="selectOptions">
+            Selecione o(s) tipo(s)
+            <img src={arrowDown} alt="arrow down"/>
+          </div>
+          )}
       </Selected>
       {open && (
         <Options>

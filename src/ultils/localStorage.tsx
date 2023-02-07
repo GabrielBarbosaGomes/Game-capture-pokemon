@@ -8,12 +8,10 @@ const setLocalStorage = (pokemon: pokemonType, wild: boolean, team: [pokemonType
     } else {
         team.push(pokemontest);
     }
-    console.log('team',team)
     localStorage.setItem('team', JSON.stringify(team));
 }
 
 export const verifyLocalStorage = (pokemon: pokemonType, wild = false, created = false) => {
-    console.log(pokemon)
     const teamLocalStorage = JSON.parse(localStorage.getItem("team")!);
 
     if(teamLocalStorage?.length < 6 || teamLocalStorage == null){

@@ -29,7 +29,6 @@ const Sidebar = ({ onclick }: Props) => {
     }
 
     useEffect(()=> {
-        console.log('pokemonEdit.data', pokemonEdit.data)
         setTeam(pokemonEdit.data)
     },[pokemonEdit])
 
@@ -40,7 +39,6 @@ const Sidebar = ({ onclick }: Props) => {
     },[])
 
     const addNewPokemon = () => {
-        console.log('team', team);
         dispatch({
             type: 'SET_CREATE',
             payload: {
@@ -49,12 +47,10 @@ const Sidebar = ({ onclick }: Props) => {
             }
         })
     }
-    console.log('pokemonEditttt', pokemonEdit)
     return (
         <ComponentWraper>
             {
                 team?.map((pokemon: any, index) => {
-                    console.log('visuaqui', pokemon)
                     return <CapturedPokemon index={index} backgroundColor="#00D68F" backgroundImg={pokemon?.data?.sprites.other.home.front_default} borderColor="#004A45" key={index} onclick={openPokemon}></CapturedPokemon>
                 })
             }

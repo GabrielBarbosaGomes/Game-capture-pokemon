@@ -53,14 +53,20 @@ export const ComponentWraperItens = styled.div`
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top: 153px;
+    top: 160px;
     border-radius: 24px 24px 0px 0px;
     border: none;
     padding-top: 170px;
     box-sizing: border-box;
 
     &.wrapper {
+        padding: 160px 24px 200px;
+    }
+
+    @media (min-width: 768px){
+        &.wrapper {
         padding: 160px 24px 80px;
+    }
     }
 `
 export const ComponentWraperImg = styled.div`

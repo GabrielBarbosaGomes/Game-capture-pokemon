@@ -30,30 +30,25 @@ const Card = ({ onclick }: Props) => {
     const dispatch = useDispatch();
 
     const editPokemon = () => {
-        console.log('edit', showEdit )
         setShowEdit(!showEdit)
     }
 
     const confirmEdit = () => {
         alterName(namePokemon, modal.index);
-        console.log('confirm', showEdit)
         setShowEdit(!showEdit);
         setEditedPokemon(true);
         const team = getLocalStorage();
 
-        console.log('team', team);
         dispatch({
             type: 'SET_POKEMON_EDIT',
             payload: {
                 data: team,
             }
         });
-        console.log('cheguei onde fecha')
         closeModal();
     }
 
     const closedEdit = () => {
-        console.log('close', showEdit)
         setShowEdit(!showEdit);
     }
 
@@ -81,7 +76,6 @@ const Card = ({ onclick }: Props) => {
     const remover = () => {
         removerLocalStorage(modal.index);
         const team = getLocalStorage();
-        console.log('team', team);
         dispatch({
             type: 'SET_POKEMON_EDIT',
             payload: {
@@ -92,8 +86,6 @@ const Card = ({ onclick }: Props) => {
     }
 
     useEffect(() => {
-        console.log('modal', modal)
-        console.log('pokemon useeffect', pokemon)
         if (modal.index && modal.open) {
             setTest(pokemonEdit.data[modal.index]);
         } else if (modal.open) {
@@ -160,7 +152,6 @@ const Card = ({ onclick }: Props) => {
                     <ComponentTitleFloating>Tipo</ComponentTitleFloating>
                     {test?.data?.types?.map((type: any, index: number) => {
                         const colorType = TypesPokemon(type.type.name)
-                        console.log(colorType)
                         return (<ComponentType key={index} color={colorType?.color}>{type.type.name}</ComponentType >)
                     })}
                 </ComponentWraperType>

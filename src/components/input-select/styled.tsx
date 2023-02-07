@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
   display: inline-block;
   width: 200px;
   height: 40px;
-  border: 1px solid #ddd;
+  border: 1px solid #E4E9F2;
   border-radius: 4px;
   cursor: pointer;
 `
@@ -21,7 +21,14 @@ export const Selected = styled.div`
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  background-color: #fff;
+  background-color: #FFF;
+
+  & .selectOptions {
+    display: flex;
+    flex-direction: initial;
+    justify-content: space-between;
+    align-items: center;
+  }
 `
 
 export const Options = styled.div`
@@ -29,7 +36,7 @@ export const Options = styled.div`
   top: 40px;
   left: 0;
   width: 100%;
-  background-color: #fff;
+  background-color: #F7F9FC;
   border: 1px solid #E4E9F2;
   border-radius: 4px;
   z-index: 2;
@@ -39,14 +46,16 @@ export const Options = styled.div`
 export const Option = styled.div`
   padding: 10px;
   display: flex;
-  background-color: #E4E9F2;
+  background-color: #F7F9FC;
   box-sizing: border-box; 
 
   input[type="checkbox"] {
     margin-right: 10px;
     width: min-content;
+    border: 1px solid #2E3A59;
   }
   & label{
+    color: #2E3A59;
     z-index: 9999;
   }
   & .itemSelect{
