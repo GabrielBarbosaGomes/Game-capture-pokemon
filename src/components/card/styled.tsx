@@ -219,6 +219,12 @@ export const ComponentWraperAbilits = styled.div`
     &.end{
         padding: 50px 0 65px;
     }
+
+    @media (min-width: 768px){
+        &.end{
+            padding-bottom: 90px;
+        }
+    }
 `
 export const ComponentPokeball = styled.img`
     position: absolute;
@@ -228,7 +234,7 @@ export const ComponentPokeball = styled.img`
     transform: translateX(-50%);
     width: max-content;
     z-index: 9000;
-    bottom: 65px;
+    bottom: 86px;
   
 `
 export const ComponentWraperStatistics = styled.div`

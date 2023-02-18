@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export interface Props {
-    botton: any
+    botton?: any
 }
 
 export const ButtonComponent = styled.button`
@@ -16,7 +16,7 @@ export const ButtonComponent = styled.button`
     box-shadow: 0px 13px 19px -3px #7f8488;
     font-family: 'Open Sans', sans-serif;
     position: fixed;
-    bottom: ${(props: any) => props.botton || '20px' };
+    bottom: ${(props: any) => props?.botton || '20px' };
     left: 50%;
     transform: translateX(-50%);
     width: max-content;

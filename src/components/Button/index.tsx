@@ -2,11 +2,11 @@ import { Children } from "react";
 import { ButtonComponent } from "./styled";
 
 type Props = {
-    children: JSX.Element | JSX.Element[] | string;
-    onclick: any;
-    id: any;
-    desabilitar:boolean,
-    botton: any
+    children?: JSX.Element | JSX.Element[] | string;
+    onclick?: any;
+    id?: any;
+    desabilitar?:boolean,
+    botton?: any
 }
 
 const Button = ({children, onclick, id, desabilitar, botton}: Props) => {

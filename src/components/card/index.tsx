@@ -256,7 +256,7 @@ const Card = ({ onclick }: Props) => {
       {modal?.open ? (
         <>
           {modal?.edit ? (
-            <Button botton="83px" onclick={remover}>
+            <Button botton="86px" onclick={remover}>
               LIBERAR POKEMON
             </Button>
           ) : (
