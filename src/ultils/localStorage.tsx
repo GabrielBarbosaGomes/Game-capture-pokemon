@@ -38,5 +38,8 @@ export const removerLocalStorage = (index: number) => {
 export const alterName = (name: string, index: number) => {
     const team = getLocalStorage();
     team[index].name = name;
+    console.log("name", name);
+    console.log("team", team);
+    console.log('team[index].name', team[index].name);
     localStorage.setItem('team', JSON.stringify(team));
 }
