@@ -58,11 +58,7 @@ const Card = ({ onclick }: Props) => {
     alterName(namePokemon, modal.index);
     setShowEdit(!showEdit);
     setEditedPokemon(true);
-    console.log("editedPokemon", editedPokemon);
-    console.log("namePokemon", namePokemon);
-    console.log("dadosPokemon", dadosPokemon)
     const team = getLocalStorage();
-    console.log("teamwwwwwwwwwww", team)
     dispatch({
       type: "SET_POKEMON_EDIT",
       payload: {
