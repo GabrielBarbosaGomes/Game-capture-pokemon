@@ -1,6 +1,6 @@
 # pokemon project
 
-projeto para estudo pessoal
+projeto pessoal para estudo
 
 ## Estrutura
 
