@@ -1,4 +1,4 @@
-# pokemon project PS
+# pokemon project
 
 projeto para estudo pessoal
 
