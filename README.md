@@ -12,5 +12,5 @@ projeto pessoal para estudo
 Na primeira execução, execute os seguintes comandos:
 
 `yarn install`
-
+`npm install`
 `yarn dev`
