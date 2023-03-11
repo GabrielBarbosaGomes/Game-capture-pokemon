@@ -1,6 +1,12 @@
 # pokemon project
 
-projeto pessoal para estudo
+* projeto pessoal para estudo,
+
+Opções: caçar pokemon, capturar pokeon, criar pokemon, soltar pokemon, editar pokemon
+
+
+* redux para gerenciamento de estado,
+* guardando informações no local storage,
 
 ## Estrutura
 
